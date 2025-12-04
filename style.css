@@ -112,7 +112,7 @@ header a:hover {
     transform: translateY(-200%);
   }
   60% {
-    tansform: translateY(-300%);
+    transform: translateY(-300%);
   }
   80% {
     transform: translateY(-400%);
@@ -488,5 +488,6 @@ section,
     height: 90px;
   }
 }
+
 
 
