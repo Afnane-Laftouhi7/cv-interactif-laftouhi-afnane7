@@ -305,7 +305,7 @@ header a:hover {
 
 .skill-card:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(219, 63, 89, 0.8);
 }
 .fa-html5 {
   color: #e34c26;
@@ -341,6 +341,16 @@ header a:hover {
 }
 .fa-image {
   color: rgb(74, 22, 153);
+}
+/*languages*/
+.fa-pen-fancy {
+  color: rgb(86, 83, 65);
+}
+.fa-book {
+  color: rgb(0, 35, 8);
+}
+.fa-comment-dots {
+  color: rgb(181, 175, 189);
 }
 .project-container {
   display: flex;
@@ -422,9 +432,7 @@ section,
   box-sizing: border-box;
 }
 
-
 @media (max-width: 768px) {
- 
   header {
     flex-direction: column;
     gap: 10px;
@@ -435,7 +443,6 @@ section,
     font-size: 14px;
   }
 
- 
   .homeContainer {
     flex-direction: column;
     text-align: center;
@@ -452,20 +459,17 @@ section,
     max-width: 90%;
   }
 
-  
   .about-container img {
     width: 90%;
     height: auto;
   }
 
-  
   .projects-grid {
-     grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  
   .contact-container p {
-    padding: 0 20px !important;
+    padding: 0 20px;
     font-size: 16px;
   }
 
@@ -488,6 +492,3 @@ section,
     height: 90px;
   }
 }
-
-
-
