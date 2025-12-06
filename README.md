@@ -21,6 +21,8 @@ HTML5
 
 CSS3
 
+JavaScript
+
 Font Awesome Icons
 
 Bootstrap 5
