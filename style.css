@@ -665,7 +665,6 @@ header nav a:hover::after {
   font-size: 36px;
   color: var(--theme-text-first);
   font-family: cursive;
-  text-shadow: 0px 0px 5px white;
 }
 .contact-container p {
   font-size: larger;
@@ -829,3 +828,4 @@ section,
     font-size: 30px;
   }
 }
+
