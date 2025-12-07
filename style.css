@@ -940,6 +940,15 @@ section,
   }
 }
 
+@media (max-width: 1100px) {
+  .homeContainer img {
+    width: 300px;
+  }
+  .container_mouse {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   .menu-sandwich {
     display: block;
@@ -1014,3 +1023,4 @@ section,
   }
 
 }
+
