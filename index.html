@@ -16,17 +16,23 @@
 
 <body>
   <div id="cursor"></div>
-  <div id="theme-toggle" onclick="themeModeChange()">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22" height="22" class="sun">
-      <path
-        d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" />
-    </svg>
+  <div id="theme-toggle">
+    <div class="sun" onclick="themeModeChange()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22" height="22">
+        <path
+          d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" />
+      </svg>
+    </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="22" height="22" class="moon">
-      <path
-        d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
-    </svg>
+    <div class="moon" onclick="themeModeChange()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="22" height="22">
+        <path
+          d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+      </svg>
+    </div>
   </div>
+
+  <div id="backToTop" class="backTop-btn"><i name="arrow-up-outline" class="fa-solid fa-arrow-up ion-icon"></i></div>
 
   <header>
     <h1>Afnane</h1>
@@ -76,12 +82,24 @@
           my world more, you can keep scrolling to discover additional details
           ^-^ />
       </p>
+      <div class="home-btns">
+        <a class="about-btn" href="#about">More About Me</a>
+        <a class="contact-btn" href="#contact">Contact Me</a>
+      </div>
     </div>
+    <a href="#about" class="container_mouse">
+      <span class="mouse-btn">
+        <span class="mouse-scroll"></span>
+      </span>
+      <span class="scroll-text">Scroll Down</span>
+    </a>
   </section>
 
   <section id="about" class="about-container">
     <div class="title">
+      <span style="--direction: to left;"></span>
       <h2>About ME</h2>
+      <span style="--direction: to right;"></span>
     </div>
     <img src="./images/about.jpg" />
     <div>
@@ -98,7 +116,9 @@
 
   <section id="skills" class="skills-container">
     <div class="title">
+      <span style="--direction: to left;"></span>
       <h2>My skills</h2>
+      <span style="--direction: to right;"></span>
     </div>
     <h3>🖥️My Coding Universe</h3>
     <div class="skills-icons">
@@ -160,7 +180,9 @@
   </section>
   <section id="projects" class="project-container">
     <div class="title">
+      <span style="--direction: to left;"></span>
       <h2>My future projects</h2>
+      <span style="--direction: to right;"></span>
     </div>
     <div class="projects-grid">
       <div class="project-card">
@@ -245,39 +267,47 @@
 
   <section id="contact" class="contact-container">
     <div class="title">
+      <span style="--direction: to left;"></span>
       <h2>Contact me</h2>
+      <span style="--direction: to right;"></span>
     </div>
     <div>
       <p>if you have a suggestion you can leave it here ^-^</p>
       <form class="contact-form">
-        <label>Your Name</label>
-        <input type="text" placeholder="Enter your name" required />
+        <div>
+          <label for="name">Your Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </div>
 
-        <label>Your Email</label>
-        <input type="email" placeholder="Enter your email" required />
+        <div>
+          <label for="email">Your Email</label>
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </div>
 
-        <label>Your Suggestion</label>
-        <textarea placeholder="Write your suggestion..." required></textarea>
+        <div>
+          <label for="suggestion">Your Suggestion</label>
+          <textarea id="suggestion" placeholder="Write your suggestion..." required></textarea>
+        </div>
 
         <button type="submit">Send</button>
       </form>
     </div>
-    <p>intrested to team up or just wanna chat here you go!</p>
-    <div class="icons">
-      <a href="mailto:afnaanelaftouhi@gmail.com" style="--color: #d44638">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-
-      <a href="https://www.instagram.com/afnane_la17" style="--color: #f115ca" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <a href="https://wa.link/lvui0j" style="--color: #25d366" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-      <a href="https://github.com/Afnane-Laftouhi7" style="--color: #ffffff" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
+    <div>
+      <p>intrested to team up or just wanna chat here you go!</p>
+      <div class="icons">
+        <a href="mailto:afnaanelaftouhi@gmail.com" style="--color: #d44638">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/afnane_la17" style="--color: #f115ca" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.link/lvui0j" style="--color: #25d366" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/Afnane-Laftouhi7" style="--color: #ffffff" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
     </div>
   </section>
 
