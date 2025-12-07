@@ -33,3 +33,32 @@ const toggleNav = function () {
 };
 
 navToggler.addEventListener("click", toggleNav);
+
+/**
+ * BACK TO TOP BUTTON
+ */
+
+const btn = document.getElementById("backToTop");
+
+window.addEventListener("load", () => {
+  if (window.scrollY > 200) { 
+    btn.style.scale = "1";
+  } else {
+    btn.style.scale = "0";
+  }
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) { 
+    btn.style.scale = "1";
+  } else {
+    btn.style.scale = "0";
+  }
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
