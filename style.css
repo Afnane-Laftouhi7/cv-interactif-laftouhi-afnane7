@@ -1024,3 +1024,11 @@ section,
 
 }
 
+@media (max-width: 380px) {
+  .homeText h2{
+    font-size: larger;
+  }
+  .welcome{
+    font-size: x-large !important;
+  }
+}
